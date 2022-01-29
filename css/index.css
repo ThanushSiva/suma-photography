@@ -19,7 +19,7 @@ html{
     left: 0;
     position: absolute;
     /* background-image: url("../images/setion1.jpg"); */
-    background-image: url("/back.jpg");
+    background-image: url("back.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
