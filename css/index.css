@@ -2,6 +2,9 @@
     margin : 0;
     padding : 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .section{
     width: 100%;
     height: 100vh;
@@ -15,7 +18,8 @@
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../images/setion1.jpg");
+    /* background-image: url("../images/setion1.jpg"); */
+    background-image: url("/back.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,40 +38,64 @@
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    height: 130px;
-    align-items: center;
-    transition: 1s;
+    height: 80px;
+    align-items: stretch;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.scrl{
+    position: absolute;
+    bottom : 10px;
+    filter:invert();
+}
+.scrl:hover{
+    animation: scroll 0.7s infinite;
+}
+@keyframes scroll{
+    100%{
+        bottom: 0;
+    }
 }
 .menus{
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
     flex-wrap: wrap;
+    /* height : 40px; */
     /* justify-content: space-between; */
     color: white;
 }
 .navitems{
+    display: flex;
     padding-right: 50px;
-    padding-left: 50px;   
+    padding-left: 50px;
+    align-items: center;
+}
+.navhover:hover{
+    background-color: grey;
 }
 .imglogo{
     height: 4em;
 }
-/* .header{
-    display: flex;
-    flex-direction: column;
-} */
+.logo{
+    padding-left: 40px;
+    padding-top: 10px;
+}
 .section12{
     top: 0;
     left: 0;
     position: absolute;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     z-index: 3;
     color: white;
 }
 h1{
-    font-size: 5em;
+    font-size: 50px;
     font-weight: 200;
     letter-spacing: 0.2em;
 }
@@ -75,4 +103,56 @@ h1{
     font-size: 2em;
     font-weight: 100;
     letter-spacing: 0.3em;
+}
+.header{
+     text-align: center;   
+}
+.ham{
+    display: none;
+    filter: invert();
+    padding: 20px;
+}
+
+@media only screen and (max-width:1280px){
+    .navitems{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width:910px){
+    .navitems{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .navhover{
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+    .logo{
+        padding-left: 10px;
+    }
+}
+@media only screen and (max-width:550px){
+    h1{
+        font-size: 40px;
+        font-weight: 200;
+        letter-spacing: 0.2em;
+    }
+    .brief{
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.3em;
+    }
+}
+@media only screen and (max-width:455px){
+    h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:400px){
+    .imglogo{
+        height: 3em;
+    }
 }
