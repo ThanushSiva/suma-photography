@@ -1,0 +1,78 @@
+*,body{
+    margin : 0;
+    padding : 0;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.section1{
+    background: black;
+    position: relative;
+}
+.section11{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url("../images/setion1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.navcontainer{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+    position: fixed;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    height: 130px;
+    align-items: center;
+    transition: 1s;
+}
+.menus{
+    display: flex;
+    font-size: 1.5em;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    color: white;
+}
+.navitems{
+    padding-right: 50px;
+    padding-left: 50px;   
+}
+.imglogo{
+    height: 4em;
+}
+/* .header{
+    display: flex;
+    flex-direction: column;
+} */
+.section12{
+    top: 0;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 3;
+    color: white;
+}
+h1{
+    font-size: 5em;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+}
+.brief{
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+}
