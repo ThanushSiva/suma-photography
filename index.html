@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suma Photgraphy - Mettuplayam</title>
     <link rel="stylesheet" href="./css/index.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#services").load("./html/incl.html"); 
+    });
+    </script>  -->
+
 </head>
 
 <body>
-    <div class="section section1">
+    <div id="section1" class="section section1">
     </div>
     <div class="section section11">
     </div>
@@ -23,7 +31,7 @@
             </div>
             <div class="menus">
                 <li class="navitems navhover"><a href="#">Home</a></li>
-                <li class="navitems navhover"><a href="#">Serives</a></li>
+                <li class="navitems navhover"><a href="#services">Serives</a></li>
                 <li class="navitems navhover"><a href="#">Works</a></li>
                 <li class="navitems navhover"><a href="#">About</a></li>
                 <li class="navitems navhover"><a href="#">Contact Us</a></li>
@@ -36,9 +44,51 @@
             <h1>SUMA - PHOTOGRAPHY</h1>
             <p class="brief">Creative Photography for any kind of Cerimonies.</p>
         </div>
-        <a class="scrl" href="#section2"><img src="./icons/scrolldown.png" alt="scroll down"/></a>
+        <a class="scrl" href="#services"><img src="./icons/scrolldown.png" alt="scroll down" /></a>
     </div>
-    <div id="section2" class="section"></div>
+
+    <!-- <div id="services" class="services">
+        <div class="wrap">
+            <div class="imagechanger">
+                <img id="randomimg">
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reiciendis porro quibusdam dignissimos natus sequi, odio rem id consequuntur corporis in totam minima. Sunt perferendis accusantium ipsum? Dignissimos, minus vitae?</p>
+            </div>
+        </div>
+    </div> -->
+    <div class="services" id="services"></div>
+
+    <div class="footer">
+        <div class="footmenus">
+            <ul class="menulist">
+                <a href="#section1"><li class="lists">HOME</li></a>
+                <a href=""><li class="lists">SERVICES</li></a>
+                <a href=""><li class="lists">WORKS</li></a>
+                <a href=""><li class="lists">ABOUT</li></a>
+                <a href=""><li class="lists">CONTACT US</li></a>
+            </ul>
+            <ul class="menuicons">
+                <a href="https://www.instagram.com/suma_studioz/"><img class="ic insta" src="./icons/insta.png"></a>
+                <a href="https://m.facebook.com/Suma-wedding-photography-1005388052905963/"><img class="ic fb" src="./icons/fb.png"></a>
+                <a href="mailto:sumavideomtp@gmail.com"><img class="ic mail" src="./icons/mail.png"></a>
+            </ul>
+            <hr style="margin-top: 60px;">
+            <div class="end">
+                <div class="contact">
+                    <p>Phone    :   9443913992</p>
+                    <p>Mail     :   sumavideomtp@gmail.com</p>
+                </div>
+                <div class="address">
+                    <p>No 27, Anna Complex,</p>
+                    <p>Bus Stand,Mettuplayam</p>
+                    <p>Coimbatore - 641301</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script defer src="./js/scrollpage.js"></script>
+    <script defer src="./js/randomimg.js"></script>
 </body>
+
 </html>
